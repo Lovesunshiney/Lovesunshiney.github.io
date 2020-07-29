@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showPic</title>
+    <script type="text/javascript" src="scripts/ShowPic.js"></script>
+    <link rel="stylesheet" href="styles/layout.css" media="screen" />
+</head>
+
+<body>
+    <hi>Snapshots</hi>
+    <ul>
+        <li>
+            <a href="images/fireworks.jpg" onclick="showpic(this); 
+            return false; " title="A fireworks display">Fireworks</a>
+        </li>
+        <li>
+            <a href="images/coffee.jpg" onclick="showpic(this); 
+            return false; " title="A cup of coffee">coffee</a>
+        </li>
+        <li>
+            <a href="images/rose.jpg" onclick="showpic(this); 
+            return false; " title="A red,red rose">Rose</a>
+        </li>
+        <li>
+            <a href="images/bigben.jpg" onclick="showpic(this); 
+            return false; " title="The famous clock">Big Ben</a>
+        </li>
+        <li>
+            <b href="#" onclick="window.open('http://www.baidu.com/','度娘','width = 320, height = 240'); 
+            return false; " title="baidu">点我打开百度！</b>
+        </li>
+    </ul>
+    <img id="placeholder" src="images/placeholder.gif" alt="my image gallery" />
+    <p id="description">Choose an image</p>
+    <script>
+        window.onload = countBodyChildren;
+    </script>
+</body>
+
+</html>
